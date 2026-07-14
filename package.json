@@ -1,7 +1,7 @@
 {
   "name": "word-quest-ket-vercel",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "KET 词汇记忆小游戏的 Vercel 静态版本",
+  "description": "内置 300 个 A2 Key 核心词的 KET 记忆小游戏 Vercel 静态版",
   "scripts": { "dev": "npx serve .", "build": "node -e \"console.log('Static site: no build step required')\"" }
 }

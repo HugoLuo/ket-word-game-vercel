@@ -5,6 +5,7 @@ ket-word-game-vercel/
 |-- package.json
 |-- vercel.json
 |-- README.md
+|-- SOURCES.md
 |-- PROJECT_STRUCTURE.txt
 `-- assets/
     |-- favicon.svg
