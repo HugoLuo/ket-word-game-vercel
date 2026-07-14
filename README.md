@@ -22,8 +22,11 @@ ket-word-game-vercel/
 1. 将整个文件夹提交到 GitHub。
 2. 在 Vercel 选择 **Add New → Project** 并导入仓库。
 3. Framework Preset 选择 **Other**。
-4. Build Command 使用 `npm run build` 或留空。
-5. Output Directory 留空，然后点击 Deploy。
+4. Framework Preset 选择 **Other**。
+5. Build Command 可使用 `npm run build`。
+6. Output Directory 填写 `.`，然后点击 Deploy。
+
+项目中的 `vercel.json` 已明确设置 `"outputDirectory": "."`，它会覆盖 Vercel 控制台中旧的 `public` 设置。
 
 也可以在本目录运行 `npx vercel`。
 
