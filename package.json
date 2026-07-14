@@ -1,0 +1,7 @@
+{
+  "name": "word-quest-ket-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KET 词汇记忆小游戏的 Vercel 静态版本",
+  "scripts": { "dev": "npx serve .", "build": "node -e \"console.log('Static site: no build step required')\"" }
+}

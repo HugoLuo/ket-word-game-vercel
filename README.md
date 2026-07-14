@@ -1,0 +1,35 @@
+# Word Quest · KET 词汇大冒险
+
+这是可直接部署到 Vercel 的纯静态版本，不依赖数据库、服务器或 API 密钥。
+
+## 目录结构
+
+```text
+ket-word-game-vercel/
+├── index.html          页面入口
+├── styles.css          界面样式与响应式布局
+├── app.js              游戏逻辑、发音、词库和本地存储
+├── package.json        项目信息与本地预览命令
+├── vercel.json         Vercel 配置
+├── README.md           部署与目录说明
+└── assets/
+    ├── favicon.svg     网站图标
+    └── og.png          分享封面
+```
+
+## Vercel 部署
+
+1. 将整个文件夹提交到 GitHub。
+2. 在 Vercel 选择 **Add New → Project** 并导入仓库。
+3. Framework Preset 选择 **Other**。
+4. Build Command 使用 `npm run build` 或留空。
+5. Output Directory 留空，然后点击 Deploy。
+
+也可以在本目录运行 `npx vercel`。
+
+## 数据说明
+
+- 自定义词库、掌握度和最佳连胜保存在浏览器 `localStorage` 中。
+- 不同设备的数据互不同步。
+- 发音使用浏览器 Web Speech API，声音由设备决定。
+- 词库每行格式：`英文, 中文`，至少 4 个有效单词。
